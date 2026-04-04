@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt_BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inputs</title>
+</head>
+
+<body>
+    <form action="aula07.html" id="meuform" method="post">
+        <fieldset>
+            <legend>Preencha</legend>
+        <div>
+            <label>Informaçõess pessoais</label><br><br>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Digite seu nome"><br><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="Digite seu email"><br><br>
+
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" placeholder="Digite sua senha"><br><br>
+        </div>
+        <div>
+            <label>Sexo</label><br><br>
+            <input type="radio" id="masculino" name="sexo" value="masculino">
+            <label for="masculino">Masculino</label><br>
+            <input type="radio" id="feminino" name="sexo" value="feminino">
+            <label for="feminino">Feminino</label><br><br>
+        </div>
+        <div>
+            <label for="interesses">Interesses</label><br><br>
+            <input type="checkbox" id="frontend" name="interesses" value="frontend">
+            <label for="frontend">Frontend</label><br>
+            <input type="checkbox" id="backend" name="interesses" value="backend">
+            <label for="backend">Backend</label><br>
+            <input type="checkbox" id="mobile" name="interesses" value="mobile">
+            <label for="mobile">Mobile</label><br><br>
+        </div>
+        <div>
+            <label for="fotoperfil">foto de perfil</label><br><br>
+            <input type="file" name="perfil" id="foto de perfil">
+        </div>
+        <div>
+            <label for="select">situação atual</label><br>
+            <select name="situação" id="select">
+                <option value="" selected disabled>escolha um status</option>
+                <option value="estudante">Estudante de programação</option>
+                <option value="pweb">Programador web</option>
+                <option value="qmobile">programador mobile</option>
+            </select>
+        </div>
+        <div>
+            <label for="comentario">comentario</label><br>
+            <textarea name="comentario" id="comentario" cols="50" rows="10" placeholder="Deixe seu Comentário"></textarea>
+        </div>
+
+
+
+        <input type="submit" value="Enviar">
+        </fieldset>
+    </form>
+
+</body>
+
+</html>
+
+
+<style>
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(248, 214, 146);
+    }
+    div {
+        margin-bottom: 5px;
+        border: 2px solid rgb(54, 47, 47);
+        border-radius: 7px;
+        padding: 3px;
+        text-align: center;
+        background-color: rgb(184, 169, 179);
+    }
+    input[type="submit"] {
+        background-color: rgb(214, 112, 112);
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        cursor: pointer;
+        
+    }
+    input{
+        border: 1px solid black;
+        border-radius: 7px;
+        padding: 5px;
+    }
+    input[type="file"] {
+        padding: 3px;
+        background-color: rgb(254, 251, 245);
+    }
+    fieldset{
+        width: 70px;
+        height: auto;
+        
+    }
+
+
+</style>
+
