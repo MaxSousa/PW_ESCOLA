@@ -1,0 +1,48 @@
+
+h1{
+    font-size: 20px;
+
+}
+body{
+    display: flex;
+    background-color: bisque;
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+    height: 120px;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px ;    
+    border-radius: 7px;
+    
+}
+.form-container input{
+    width: 200px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-bottom: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: blur();
+}
+#login{
+    background-color: rgb(146, 140, 189);
+    
+}
+#interesses{
+    background-color: rgba(255, 255, 255, 0.3);
+    filter: blur(1px);
+
+}
+#dados{
+    background-color: rgb(96, 78, 213);
+}
+#habilidades{
+    background-color: blueviolet;
+}
