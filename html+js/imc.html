@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let peso = parseFloat(prompt("digite aqui seu peso"));
+        let altura =parseFloat(prompt("digite aqui sua altura"));
+        let imc = peso/(altura*altura)
+
+        if (imc < 18.5) {
+            alert("peso abaixo do ideal")
+        }
+        else if (imc >= 18.5 && imc <= 24.9){
+            alert("peso normal")
+        }
+        else if (imc >=25 && imc <= 29.9){
+            alert("pre obesidade")
+        }
+        else if (imc >= 30 && imc <= 34.9){
+            alert("obesidade grau I")
+        }
+        else if (imc >= 35 && imc <= 39.9){
+            alert("obesidade grau II")
+        }
+        else {
+            alert("obesidade grau III")
+        }
+
+    </script>
+</body>
+</html>
