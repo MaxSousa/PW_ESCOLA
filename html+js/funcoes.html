@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="corpo">
+    <script src="funcoes.js"></script>
+    <main>
+        <button type="button" id="botao1" onclick="trocarCorDeFundo()">mudar cor de fundo</button>
+        <h1 id="max">Max</h1>
+    </main>
+</body>
+</html>
+
+<style>
+    main{
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+        flex-direction: column;
+    }
+    #botao1{
+        margin-bottom: 15vh;
+        padding: 15px;
+        border-radius: 12px;
+        background-color: rgb(151, 53, 243);
+        cursor: pointer;
+    }
+    #botao1:hover{
+        transform: scale(1.2);
+        transition: 0.7s;
+    }
+    #botao1::after{
+        transform: scale(1);
+        transition: 1s;
+    }
+    #max{
+        margin-bottom: 30vh;
+    }
+</style>
